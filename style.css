@@ -1,0 +1,252 @@
+html { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(255, 255, 255);
+    background: url(Images/wine2.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+head {
+    margin-left: 40%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: fixed;
+    opacity: .9;
+}
+
+#copyrightContainer {
+    position: relative;
+}
+
+#copyright {
+    display: inline-block;
+    position: fixed;
+    bottom: 5px;
+    right: 10px;
+    background-color: rgba(0, 0, 0, 0.452);
+    opacity: 1;
+    font-size: 10.5px;
+    height: 10.5px;
+}
+
+#responseBlock {
+    margin-top: 10px;
+    margin-left: 10px;
+    display: none;
+    margin-right: 0px;
+}
+
+#questions {
+    background-color: black;
+    opacity: .9;
+}
+
+#navigationBlock {
+    display: none;
+}
+
+#outputEdges {
+    margin-left: 20%;
+    position: absolute;
+    display: none;
+    background-color: rgb(255, 255, 255);
+    height: 80vh;
+    width: 80vw;
+}
+
+#outputBlock{
+    margin: 2px;
+    background-color: black;
+    width: 98vw;
+    color: white;
+}
+
+#outputText {
+    font-family: "Didot";
+    font-size: 20px;
+    overflow: auto;
+    margin-bottom: 5px;
+}
+
+#outputPicture {
+    position: relative;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    top: .1vh;
+    bottom: 2vh;
+    max-width: auto;
+    max-height: 38vh;
+    overflow: hidden;
+}
+
+#outputTitle{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+div.scroll {
+    margin: 3% 3% 3% 3%;
+    padding:4px; 
+    height: 35%;
+    overflow: scroll;
+    text-align: justify;
+}
+
+.scroll::-webkit-scrollbar {
+    width: 1em;
+}
+
+.scroll::-webkit-scrollbar-track{
+    background-color: #8d0ea7;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+    background-color: #272727;
+    outline: 10px solid rgb(0, 0, 0);
+}
+
+button {
+    background-color: #ac4caf;
+    border: black;
+    color: rgb(255, 255, 255);
+    box-shadow: 1px 1px #3d2727;
+    padding: 5px 50px;
+    text-align: center;
+}
+
+#startbtn {
+    margin-left: 10px;
+}
+
+#next {
+    padding: 5px 50px;
+    text-align: center;
+}
+
+#back {
+    margin-left: 10px;
+    margin-right: 5%;
+}
+
+#submitbtn {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    padding: 5px 45px;
+    display: none;
+}
+
+#refresh {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+}
+
+/* Customize the label (the container) */
+.container {
+    margin-left: 1px;
+    color: #464646;
+    display: inline-block;
+    position: relative;
+    padding-left: 5px;
+    margin-bottom: 113px;
+    cursor: pointer;
+    font-size: 150%;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.outerLabel {
+    margin-top: 10px;
+    margin-left: 5px;
+    color: rgb(0, 0, 0);
+    background-color: #ffffff8c;
+    pointer-events: none;
+}
+  
+  /* Hide the browser's default radio button */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+  
+  /* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 140px;
+    opacity: .8;
+    box-shadow: 1px 1px #a7a7a7;
+}
+
+#box5 {
+    width: 102.5%;
+    background-color: #00E81C;
+}
+
+#box4 {
+    width: 105%;
+    background-color: #9df33b;
+}
+
+#box3 {
+    width: 103.5%;
+    background-color: #DAF200;
+}
+
+#box2 {
+    width: 103%;
+    background-color: #F22618;
+}
+
+#box1 {
+    width: 103%;
+    background-color: #A61208;
+}
+  
+/* On mouse-over, highlight*/
+.checkmark:hover {
+    opacity: 1;
+    height: 150px;
+}
+
+.checkmark ~ .checkmark:checked{
+    opacity: 1;
+}
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+  
+  /* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+  
+  /* Style the indicator (dot/circle) */
+.container .checkmark:after {
+    background-image: url("Images/WineBottle.png");
+    position: absolute;
+    top: 40px;
+    left: 17%;
+    width: 60px;
+    height: 80px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

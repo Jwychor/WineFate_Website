@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <base href="/">
+        <title></title>
+        <script data-main="www/app" src = "www/lib/require.js"></script>
+
+        <h1 id = "title">What's your Wine Sign?</h1>
+        <link href="style.css" rel="stylesheet" type = "text/css"></link>
+    </head>
+    <body>
+        <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
+        <form method="get" action="https://script.google.com/macros/s/AKfycbwt16rFuooiwT3R60rWZFC5KsXl01gd-ew2o7h5-h-Pu4upAbZi/exec" name="theForm" id="theForm" target="hidden_iframe">
+            <div id = "fullForm">
+                <div id = "startBlock">
+                    Enter your email: <input type = "text" id ="email">
+
+                    <br><br>
+
+                    <button type = "button" id = "startbtn">Start</button>
+                </div>
+                <div id = "responseBlock">
+                    <h4 id = "questionNumber"></h4>
+                    <h4>Please select the answer that <i>best</i> fits you</h4>
+                    <p id = "questionText"></p>
+                    <div id="questions">
+                        <label for="response5" class ="container"><input type = "radio" id = "response5" value = "5" name = "response" 
+                            style = "margin-left: 0;">
+                            <span class="checkmark" id = "box5"><label class = "outerLabel">Almost Always</label></span>
+                            Almost Always</label>
+                    
+                        <label for="response4" class ="container"><input type = "radio" id = "response4" value = "4" name = "response" 
+                            style = "margin-left: 0;">
+                            <span class="checkmark" id = "box4"><label class = "outerLabel">Usually</span>
+                            Usually</label>
+
+                        <label for="response3" class ="container"><input type = "radio" id = "response3" value = "3" name = "response" 
+                            style = "margin-left: 0;">
+                            <span class="checkmark" id = "box3"><label class = "outerLabel">Sometimes</span>
+                            Sometimes</label>
+
+                        <label for="response2" class ="container"><input type = "radio" id = "response2" value = "2" name = "response" 
+                            style = "margin-left: 0;">
+                            <span class="checkmark" id = "box2"><label class = "outerLabel">Occasionally</span>
+                            Occasionally</label>
+
+                        <label for="response1" class ="container"><input type = "radio" id = "response1" value = "1" name = "response" 
+                            style = "margin-left: 0;">
+                            <span class="checkmark" id = "box1"><label class = "outerLabel">Almost Never</span>
+                            Almost Never</label>
+                    </div>
+                </div>
+                <br>
+                <div id = "navigationBlock">
+                    <button type = "button" id = "back" class = "nextandbackbtn" value = "back">Back</button>
+                    <button type = "button" id = "next" class = "nextandbackbtn" value = "next">Next</button>
+                    
+                    <br><br>
+                    
+                    <button type = "button" id = "submitbtn">Submit</button>
+                </div>
+            </div>
+        </form>
+        <div id = "outputEdges">
+            <div id = "outputBlock">
+                <p id ="outputTitle">
+                    You are a Gewurztraminer
+                </p>
+                <div id="outputText" class = "scroll">
+                        Bold, creative and exotic moving right into flamboyant are the words that best describe a Gewurztraminer. 
+                        They are distinctive in their looks and manner.  So much so they are almost impossible to disguise. 
+                        They are like the movie stars that only play versions of themselves in role after role. 
+                        To some they may even seem a bit affected, but they aren’t. 
+                        They don’t bother with artifice, although they may try to play their quirkiness down. 
+                        But that is difficult for them because they are originals. 
+                        Straightforward, they tend to say exactly what they mean, which doesn’t always make them likeable at first meeting.  
+                        But they really don’t care what other people think. But when their qualities are realized, people may fight for their company. 
+                        They love fashion, but don’t follow trends, and their tastes lean toward the exotic. 
+                        If a Gewürztraminer is dull or ordinary it is either because the right opportunities have not come their way, or they attempting to do something that just isn’t in their nature. 
+                        They are not good mixers. As a child/young adult they can be quiet, reserved, or even austere, but somewhere along the way to maturity they change into their strong, unique, complex selves. 
+                        People do not forget them and they are easily recognized.  They are brainy and are likely to have very high education levels. 
+                        They are often misunderstood.
+                </div display="inline-block">
+                    <img id="outputPicture"></img>
+                    <button type=button id="refresh">Refresh</button>
+                <div id = "outputTextBottom" style = "height: 17px;">
+
+                </div>
+            </div>
+        </div>
+    </body>
+    <footer id="copyrightContainer">
+        <small id="copyright">
+            &copy; 2017 Wine Fate, All Rights Reserved.
+        </small>
+    </footer>
+</html>
