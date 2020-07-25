@@ -6,7 +6,7 @@ Winesign Website is a front end website built with JavaScript, HTML, and CSS in 
 
 ## Installation
 
-This website can be downloaded through the command line using:
+This project can be downloaded through the command line using:
 
 ```
 git clone https://github.com/Jwychor/WineFate_Website
