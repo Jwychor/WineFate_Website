@@ -1,7 +1,7 @@
 # WineFate Website
 
 ![image]
-(https://github.com/Jwychor/WineFate_Website/blob/master/Images/WineFate.png)
+(/Images/WineFate.png)
 
 Winesign Website is a front end website built with JavaScript, HTML, and CSS in VS Code.
 
@@ -16,7 +16,7 @@ git clone https://github.com/Jwychor/WineFate_Website
 When live, it should appear as it does below. If prompted, click on the /www folder.
 
 ![image]
-(https://github.com/Jwychor/WineFate_Website/blob/master/Images/Website_Example.JPG)
+(/Images/Website_Example.JPG)
 
 ## Usage
 
