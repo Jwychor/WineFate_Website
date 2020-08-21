@@ -2,7 +2,7 @@
 
 ![image](/Images/WineFate.png)
 
-Winesign Website is a front end website built with JavaScript, HTML, and CSS in VS Code.
+Winesign Website is a front-end website design built with JavaScript, HTML, and CSS.
 
 ## Installation
 
